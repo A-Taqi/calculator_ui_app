@@ -8,9 +8,12 @@ class MainApp extends StatelessWidget {
   MainApp({super.key});
 
   // Text Styles
-  final TextStyle greenTextStyle = TextStyle(fontSize: 24, color: Colors.green);
-  final TextStyle whiteTextStyle = TextStyle(fontSize: 24, color: Colors.grey);
-  final TextStyle redTextStyle = TextStyle(fontSize: 24, color: Colors.red);
+  final TextStyle greenTextStyle =
+      const TextStyle(fontSize: 24, color: Colors.green);
+  final TextStyle whiteTextStyle =
+      const TextStyle(fontSize: 24, color: Colors.grey);
+  final TextStyle redTextStyle =
+      const TextStyle(fontSize: 24, color: Colors.red);
 
   // Box Decorations
   final BoxDecoration greenDecoration = BoxDecoration(
@@ -39,13 +42,10 @@ class MainApp extends StatelessWidget {
                 Container(
                   width: 350,
                   height: 75,
-                  margin: EdgeInsets.all(20),
+                  margin: const EdgeInsets.all(20),
                   alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.shade200,
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  child: Text(
+                  decoration: greyDecoration,
+                  child: const Text(
                     "923",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
@@ -56,7 +56,7 @@ class MainApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
@@ -67,51 +67,36 @@ class MainApp extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greenDecoration,
                           child: Text(
                             "+/-",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
+                            style: greenTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greenDecoration,
                           child: Text(
                             "%",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
+                            style: greenTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greenDecoration,
                           child: Text(
                             "÷",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
+                            style: greenTextStyle,
                           ),
                         ),
                       ],
@@ -120,67 +105,47 @@ class MainApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "7",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "8",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "9",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greenDecoration,
                           child: Text(
                             "X",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
+                            style: greenTextStyle,
                           ),
                         ),
                       ],
@@ -189,67 +154,47 @@ class MainApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "4",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "5",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "6",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greenDecoration,
                           child: Text(
                             "-",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
+                            style: greenTextStyle,
                           ),
                         ),
                       ],
@@ -258,68 +203,42 @@ class MainApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "1",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "2",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
-                          child: Text(
-                            "3",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
-                          ),
+                          decoration: greyDecoration,
+                          child: Text("3", style: whiteTextStyle),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.greenAccent.shade100,
-                              borderRadius: BorderRadius.circular(14)),
-                          child: Text(
-                            "+",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.green,
-                            ),
-                          ),
+                          decoration: greenDecoration,
+                          child: Text("+", style: greenTextStyle),
                         ),
                       ],
                     ),
@@ -327,52 +246,34 @@ class MainApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 165,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             "0",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(14)),
+                          decoration: greyDecoration,
                           child: Text(
                             ".",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.grey,
-                            ),
+                            style: whiteTextStyle,
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.center,
                           width: 75,
                           height: 75,
-                          decoration: BoxDecoration(
-                              color: Colors.red.shade100,
-                              borderRadius: BorderRadius.circular(14)),
-                          child: Text(
-                            "=",
-                            style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.red,
-                            ),
-                          ),
+                          decoration: redDecoration,
+                          child: Text("=", style: redTextStyle),
                         ),
                       ],
                     ),
